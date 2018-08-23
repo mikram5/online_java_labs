@@ -22,3 +22,18 @@ Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
 
+1. cd desktop/java2
+2. mkdir Terminal_testing
+3. a. touch first_file.txt
+      touch second_file.txt
+      touch third_file.txt
+   b. pwd
+   c. ls -al
+5. mkdir Terminal_new
+6. cp second_file.txt Terminal_new
+7. mv third_file.txt Terminal_new
+8. a. rm first_file.txt
+   b. rm -R Term_3
+9. a. vim second_file.txt
+   b. cat second_file.txt
+   c. grep "writing" second_file.txt
