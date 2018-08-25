@@ -1,37 +1,44 @@
 Answer the following questions:
 
 1.) Using the command line, how do you:
-    a. change directories?
-    b. list the contents of a folder?
-    c. print the path of the current directory?
-    d. move a file from one location to the another?
-    e. copy a file from one location to another?
-    f. create a file?
-    g. create a folder?
-    h. delete a file?
-    i. delete a folder?
-    j. print the contents of a file?
-    k. edit the contents of a file?
+    a. change directories? cd <path>
+    b. list the contents of a folder? ls -al
+    c. print the path of the current directory? pwd
+    d. move a file from one location to the another? mv <thing to move> <place to put it>
+    e. copy a file from one location to another? cp <thing to copy> <name of copy>
+    f. create a file? touch <filename>
+    g. create a folder? mkdir <name of directory to create>
+    h. delete a file? rm <filename>
+    i. delete a folder? rm -R <foldername>
+    j. print the contents of a file? cat <filename>
+    k. edit the contents of a file? vim <filename>
 
-2.) Why do we use git and Github?
+2.) Why do we use git and Github? Git allows multiple developers to
+    simultaneously work on the same code base without overwriting each others code. Github is the git repository hosting
+    service where the source code projects are stored.
 
-3.) What is the general flow of git?
+3.) What is the general flow of git? git pull --> git add --> git commit -m --> git push <remote> <branch>
 
-4.) What is the purpose of adding a remote to a local git repository?
+4.) What is the purpose of adding a remote to a local git repository? To pull and/or push code from a remote repository.
 
-5.) How do you print a message to the console?
+5.) How do you print a message to the console? System.out.println()
 
-6.) Where does a program begin its execution?
+6.) Where does a program begin its execution? at the main() method
 
-7.) What is a code block and how do you create one?
+7.) What is a code block and how do you create one? A code block is a grouping of 2 or more statements. A block is
+    created by enclosing the statements in curly braces.
 
-8.) What is the idea of variable scope?
+8.) What is the idea of variable scope? Each time you start a new block, you are creating a new scope. A scope
+    determines what objects are visible to other parts of your program. It also determines the lifetime of those objects.
 
-9.) What are semicolons used for?
+9.) What are semicolons used for? They are used as separators to terminate a statement.
 
-10.) What are lines of code indented? When should a line be indented?
+10.) What are lines of code indented? When should a line be indented? Lines of code are indented to make programs
+     easily readable. Indent one level after each opening brace, and move back out one level after each closing brace.
 
-11.) What does a .java file need to be complied to a .class file before running?
+11.) What does a .java file need to be complied to a .class file before running? The .class file contains the bytecode
+     version of the program, which is not executable code. To run the program, you must use the Java interpreter, java.
+
 
 
 
