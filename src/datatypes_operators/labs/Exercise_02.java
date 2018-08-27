@@ -24,6 +24,16 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
+        int i = 10;
+        double d = i;
+
+        System.out.println("d: " + d);
+
+        double db = 10.5;
+        int count;
+        count = (int) (db);
+
+        System.out.println("count: " + count);
 
     }
 }
