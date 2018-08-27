@@ -13,9 +13,18 @@ package datatypes_operators.labs;
 
 public class Exercise_03 {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+        throws java.io.IOException {
         // write code here
+        String s;
+
+        System.out.println("Enter your name: ");
+
+        s = (String) System.in.read();
+
+        String sub = s.substring(1, 15);
+
+        System.out.println(sub + "ay");
 
     }
 }
