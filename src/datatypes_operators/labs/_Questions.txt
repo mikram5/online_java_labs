@@ -2,32 +2,54 @@ Answer the following questions:
 
 
 1.) What are the names and uses of Java's eight primitive types?
+    boolean- represents true/false values
+    byte- 8-bit integer
+    char- character
+    double- double-precision floating point
+    float- single-precision floating point
+    int- integer
+    long- long integer
+    short- short integer
 
 2.) How do you declare and initialize an int variable called "x" with the value 42.
+    int x = 42;
 
 3.) What happens if you initialize a double variable with the value of a int?
+    no information is lost, because it is a widening conversion
 
 4.) How do you set an int variable to the value of a double?
+    by casting it
 
 5.) What are the 5 arithmetic operators?
+    +, -, *, /, %
 
 6.) What are Relational operators used for? What is the result of using a relational operator?
+    to test relationships that values have with one another. The result is a true or false result
 
 7.) Demonstrate the use of a Relational operator.
+    if (i < j) System.out.println("i < j");
 
 8.) What logical operators used for? What is the result of using a logical operator?
+    Logical operators refer to the ways in which true or false values can be connected together. The result of a logical
+    operation is of type boolean.
 
 9.) Demonstrate the use of a logical operator.
+    if (b1 & b2) sout("this won't execute");
 
 10.) How can you use the shorthand addition operator to add 10 to a variable "x"?
+     x+=10
 
 11.) What data type is a String?
+     String is not a data type.
 
 12.) Are string mutable?
+     No
 
 13.) How do you concatenate Strings?
+     with the + operator
 
 14.) Can you cast and int to a String or a String to an int? Why or why not?
+     No, they are incompatible
 
 15.) What is an array?
 
