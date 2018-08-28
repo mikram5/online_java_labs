@@ -8,4 +8,17 @@ package conditions_loops.labs;
  */
 
 public class Exercise_09 {
+    public static void main(String[] args) {
+
+        int num;
+        int i;
+
+        num = 20;
+
+        for (i = 0; i < num; i++) {
+            if(i + 2 >= num) break;
+            System.out.println(i + " ");
+        }
+        System.out.println("Done");
+    }
 }
