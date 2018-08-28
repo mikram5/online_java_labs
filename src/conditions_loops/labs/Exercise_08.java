@@ -8,4 +8,14 @@ package conditions_loops.labs;
  */
 
 public class Exercise_08 {
+    public static void main(String[] args) {
+
+        int count = 1000;
+
+        do {
+            System.out.println(count);
+            count = count -3;
+
+        } while (count >= 1);
+    }
 }
