@@ -16,4 +16,38 @@ package objects_classes_methods.labs;
  *      Cars, animals, poker games, sports teams, trees, beers, people and so on.
  */
 
+//Controller class
+class BeerController {
+    public static void main(String[] args) {
+        BeerStyle1 stout = new BeerStyle1(5.6, 35, 16);
+        BeerStyle2 gose = new BeerStyle2(4.5, 25, 12);
+    }
+}
+class BeerStyle1 {
+    double abv;  //percentage of alcohol
+    int ibu;     //level of bitterness
+    int volume;  //amount in vessel
+
+
+    //BeerStyle1 constructor
+    BeerStyle1(double a, int i, int v) {
+        abv = a;
+        ibu = i;
+        volume = v;
+    }
+}
+class BeerStyle2 {
+    double abv;
+    int ibu;
+    int volume;
+
+    //BeerStyle2 constructor
+    BeerStyle2(double a, int i, int v) {
+        abv = a;
+        ibu = i;
+        volume = v;
+    }
+}
+
+
 
