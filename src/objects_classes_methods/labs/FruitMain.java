@@ -12,14 +12,13 @@ package objects_classes_methods.labs;
  *
  */
 
-class FruitMain {
+public class FruitMain {
 
     public static void main(String[] args) {
 
         //create an object from Fruit1 class
         Fruit1 apple = new Fruit1("red", 80);
 
-        //call methods in Fruit1 class
         String str = apple.colorMeth("red");
         int val = apple.weightMeth(85);
 
@@ -29,40 +28,7 @@ class FruitMain {
     }
 }
 
-class Fruit1 {
-    String color;
-    int weight;
 
-    //Fruit1 constructor
-    Fruit1(String c, int w) {
-        color = c;
-        weight = w;
-    }
-
-    public String colorMeth(String s) {
-        return s;
-    }
-
-    public int weightMeth(int w) {
-        return w;
-    }
-}
-
-class Vegetable {
-    private int seedCount;
-
-    public Vegetable(int seedCount) {
-        this.seedCount = seedCount;
-    }
-
-    public int getSeedCount() {
-        return seedCount;
-    }
-
-    public void setSeedCount(int seedCount) {
-        this.seedCount = seedCount;
-    }
-}
 
 
 
