@@ -2,44 +2,94 @@ Answer the following questions:
 
 
 1.) What is an instance variable?
+    The data members of a class
 
 2.) How do you create an object of a class Vehicle?
+    minivan = new Vehicle();
 
 3.) What is a reference variable? How is it different from a primitive type?
+    a variable that refers to an object. When you assign one primitive-type variable to another, the variable on the
+    left receives a copy of the value of the variable on the right. When you assign one object reference variable to
+    another, you are changing the object that the reference variable refers to.
 
 4.) What does it mean to pass by reference?
+    When an object is passed as argument to a method, actually the reference to that object is passed.
+    The formal parameter is a mapping of the reference to the actual parameter.
 
 5.) What makes up a method signature?
+    access-modifier return-type method-name(param a, param b, ...){}
 
 6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
+    Public static int divide(int numA, int numB) {
+        double result;
+        result = numA/numB;
+        return result;
 
 7.) When does a method stop executing? How can you make it terminate?
+    when the method's closing curly bracket is encountered. It can be terminated by using a return statement.
 
 8.) How do you return a String from a method?
+    make the return type a string
 
 9.) What is the return type of a method that does not returns any value?
+    void
 
 10.) When should a method be static?
+     A method can be declared as static if you want to call that method without creating an object of the containing class.
 
 11.) What is an example of a time you would make an instance variable static? final?
+     static int numOfCars;  Each object does not need its own copy of the total number of cars created.
+     You would make it final if you never intend to change the variable.
 
 12.) When a method returns a value, what needs to be done with that value?
 
 13.) What is method overloading?
+     Overloading is one of the ways Java implements polymorphism.
+     In order to overload a method two or more methods with the same name must be created. However, the methods must
+     have different: parameter types or a different number of parameters.
 
 14.) Demonstrate method overloading by writing the method signature of two overloaded methods.
+     int addition(int a, int b)
+     int addition(int a, int b, int c)
 
 14.) What are constructors used for?
+     To give initial values to the instance variables defined by the class, or to perform any other startup procedures
+     required to create a fully formed object.
 
 15.) If a class does not have a constructor, how does Java handle the creation of an object
+     All classes have constructors, because Java automatically provides a default constructor that initializes all
+     member variables to their default values.
 
 16.) What does a constructor that takes in two variable, make and model, for a class Vehicle look like?
+     Vehicle(string make, string model) {
+        make = Honda;
+        model = Civic;
+     }
 
 17.) What is the "this" keyword used for?
+     When the name of a parameter or a local variable is the same as the name of an instance variable, the local name
+     hides the instance variable, "this" is used to uncover the instance variable.
 
 18.) What are the keywords public, private, protected used for in a class declaration? A method declaration? Variable declaration?
+     public - any class, in any location can access or invoke that member.
+     private - only other members of the same class can access that member.
+     protected - only members within the same package can access that member,
+     with the inclusion of a subclass of that class, if it is in a different package.
 
 19.) What is constructor overloading?
+     In order to overload a constructor two or more constructors with the same name must be created.
+     However, the constructors must have different: parameter types or a different number of parameters.
 
 20.) Demonstrate constructor overloading with three overloaded constructors.
+     MyConstructor(){
+             x = 10;
+         }
+
+     MyConstructor(int param){
+             x = param;
+         }
+
+      MyConstructor(double param2){
+              x = param;
+          }
 
