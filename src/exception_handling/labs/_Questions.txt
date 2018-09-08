@@ -1,24 +1,41 @@
 Answer the following questions:
 
 1.) What is exception handling?
+    Exception handling is used to gracefully handle errors a program might encounter. It allows us
+    to avoid letting errors interrupt program execution.
 
 2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
+    Java's exceptions are all part of the Throwable class. When an exception occurs an object of the Throwable class is generated.
+    Error class exceptions are generally caused by the machine. Exceptions of type Exception are caused by program activity.
 
 3.) What is a try/catch?
+    A try block is used to contain a section of code that could possibly cause an exception.
+    The catch block is used to handle the exception thrown inside of the try block in a graceful way.
 
 4.) What exceptions have you come across thus far?
+    ArrayIndexOutOfBoundException and ArithmeticException
 
 5.) How many catch statement can you have following a try?
+    as many as you want
 
 6.) How many try statements can you have preceding a catch?
+    one
 
 7.) What does the finally statement do in a try/catch/finally block?
+    It executes a block of code once a try/catch block is exited.
 
 8.) Can you nest exceptions? If so, when would you nest an exception?
+    One try block can be nested within another. An exception generated within the inner try block that is not caught by
+    a catch associated with that try is propagated to the outer try block.
 
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
     which should you catch first? Why?
+    The ArrayIndexOutOfBounds exception because the Exception deals with all program-related exceptions, so if the Exception
+    is caught first, the program won't get to the ArrayIndexOOB; the exception will be caught, but you won't know why.
 
 10.) How do you rethrow and exception? Why would you rethrow an exception?
+     An exception caught by one catch statement can be rethrown so that it can be caught by an outer catch.
+     You would rethrow an exception to allow multiple handlers access to the exception.
 
 11.) What is the purpose of the throws keyword?
+     If a method generates an exception that it doesn't handle, it must declare that exception in a throws clause.
