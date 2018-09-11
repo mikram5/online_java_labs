@@ -1,11 +1,17 @@
 Answer the following questions:
 
 1.) What is a thread and why do we use them?
+    Each part of a program that contains 2 or more parts that can run concurrently.
 
 2.) What are the two ways to create a thread?
+    to extend the Thread class or implement the Runnable interface
 
 3.) How do you start a thread using the Runnable interface?
+    class ClassName implements Runnable
 
 4.) How do you start a thread using the Thread class?
+    class ClassName extends Thread {
 
 5.) How do you change a thread priority?
+    You can set a thread's priority to a value between 1 (low) and 10 (high).
+    You can also use the built-in static final variables Thread.MIN_PRIORITY (1), Thread.NORM_PRIORITY (5) and Thread.MAX_PRIORITY (10).
