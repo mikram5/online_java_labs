@@ -1,19 +1,30 @@
 Answer the following questions:
 
 1.) What is a byte stream?
+    Programs use byte streams to perform input and output of 8-bit bytes.
 
 2.) What is a character stream?
+    Character streams handle the input and output of characters.
+
 
 3.) What two classes are at the top of the the byte stream hierarchy?
+    InputStream and OutputStream
 
 4.) What two classes are at the top of the the character stream hierarchy?
+    Reader and Writer
 
 5.) List at least three byte stream classes.
+    BufferedInputStream, FileInputStream, ObjectOutputStream
 
 6.) List at least three character stream classes.
+    BufferedReader, BufferedWriter, FileReader, FileWriter
 
 7.) What is a try-with-resources?
+    A version of the try statement that prevents situations in which a file is inadvertently not released after it
+    is no longer needed.
 
 8.) What makes the BufferedReader different from the BufferedInputStream?
+    BufferedReader supports a buffered input character stream. BufferedInputStream supports a buffered byte stream.
 
 9.) When would you use the read() method vs. the readline() method?
+    read() reads a single byte from a file. readLine() reads a string from the keyboard.
